@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrooveHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body class="bg-dark">
+<!--navbar-->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="container-fluid" aria-label="Main Navigation">
+        <a href="#" class="navbar-brand mt-3" aria-label="BoomBox">
+            <h3 id="brandid">GrooveHub</h3>
+        </a>
+        <!--offcanvas toggle-->
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="offcanvas" data-bs-target="#navcontents"
+        aria-controls="navcontents" aria-label="Toggle navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--offcanvas toggle-->
+        <div class="offcanvas offcanvas-end text-bg-dark ms-lg-5" tabindex="-1" id="navcontents" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header" data-bs-theme="dark">
+              <h1 class="offcanvas-title" id="offcanvasRightLabel">GrooveHub</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+            </div>
+            <div class="offcanvas-body">
+                <hr class="d-lg-none text-white-50 pt-0 mt-0">
+                <ul class="navbar-nav" data-bs-auto-close="outside">
+                    <li class="nav-item"><a href="#trendingnow" class="nav-link">Trending Now</a></li>
+                    <li class="nav-item"><a href="#topartists" class="nav-link">Top Artists</a></li>
+                    <li class="nav-item"><a href="#playlistid" class="nav-link">Playlists</a></li>
+                </ul>       
+            </div>   
+    </nav>
+</header>
+<!--navbar-->
+<div class="banner_and_form text-light mt-5">
+<!--banner-->
+    <div class="banner ms-3">
+        <h1>Unleash the power of sound at <strong style="color: rgb(7, 168, 7); text-shadow: white 1px 1px;">GrooveHub</strong>,your ultimate music destination.</h1> 
+    </div>
+<!--banner-->
+<!--Form-->
+    <div class="forms mt-4 mt-lg-0">
+        <div class="login-form ms-3">
+            <h3 style="color: rgb(7, 168, 7);;">LogIn</h3>
+            <form>
+                <div>
+                    <input type="email" id="e-id" placeholder="Enter Email Id">
+                </div>
+                <div>
+                    <input type="password" id="pass" placeholder="Enter Password">
+                </div>
+                <button type="submit" class="border-0 mt-3 mb-3 btn btn-primary">LogIn</button>
+                <p style="color: black;">Don't have an account?<a href="#" id="signuplink">SignUp</a></p>
+
+            </form>
+        </div> 
+    </div>
+<!--Form-->
+</div>
+
+<!--Trending Now-->
+<h3 class="tnow text-light ms-4" id="trendingnow">Trending Now
+    <svg style="transform: scale(1.3);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+    </svg>
+</h3>
+<div class="trendingsongs m-3"  >
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/026/Chaleya-From-Jawan-Hindi-2023-20230814014337-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Chaleya
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Anirudh Ravichander, Arijit Singh, Shilpa Rao</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/881/War-Hindi-2019-20191001104931-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Ghungroo
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Vishal & Shekhar, Arijit Singh, Shilpa Rao, Kumaar</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/505/Sapta-Sagaradaache-Ello-Side-A-Kannada-2023-20230915082825-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Kadalanu
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Nagarjun Sharma, Charan Raj, Srilakshmi Belmannu</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/815/Bhediya-Hindi-2023-20230927155213-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Apna Bana Le
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Sachin-Jigar, Arijit Singh</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/139/Dunki-Hindi-2023-20231220211003-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Lutt Putt Gaya
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Pritam, Arijit Singh, Swanand Kirkire, IP Singh</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/677/Soul-Of-Dia-From-Dia-Kannada-2020-20230904151309-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Soul Of Dia
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by B. Ajaneesh Loknath</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/303/Malang-Sajna-Hindi-2022-20230403132803-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Malang Sajna
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Sachet Tandon, Parampara Tandon, Sachet-Parampara, Kumaar</p>
+        </div>
+    </div>
+    <div class="songs card mx-2">
+        <img src="https://c.saavncdn.com/022/Heeriye-feat-Arijit-Singh-Hindi-2023-20230928050405-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body pb-1">
+          <h5 class="card-title d-flex justify-content-between">Heeriye
+            <svg style="transform:scale(1.2);margin-top:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+           </h5>
+          <p class="card-text text-truncate mb-0">by Dulquer Salmaan, Jasleen Royal, Arijit Singh</p>
+        </div>
+    </div>
+</div>
+<!--Trending Now-->
+
+<!--Top artists-->
+<h3 class="tartists text-light ms-4" id="topartists">Top Artists</h3>
+<div class="topartistss m-3" >
+  <div class="artist m-md-4 m-2">
+    <figure>
+      <img class="firstimg" src="https://i.pinimg.com/236x/6d/e7/8d/6de78dc703cb554ac02322b67eb4e04f.jpg">
+      <figcaption class="text-light text-center">Arijit Singh</figcaption>
+    </figure>
+  </div>
+  <div class="artist m-md-4 m-2">
+    <figure>
+      <img class="firstimg" src="https://i.pinimg.com/236x/08/00/1a/08001ab715a1fa96161d7f0e9e46977e.jpg">
+      <figcaption class="text-light text-center">Shreya Ghoshal</figcaption>
+    </figure>
+  </div>
+  <div class="artist m-md-4 m-2">
+    <figure>
+      <img class="firstimg" src="https://i.pinimg.com/236x/ec/8a/62/ec8a62d1816bc458fbfac8a1ace1acb1.jpg">
+      <figcaption class="text-light text-center">Sonu Nigam</figcaption>
+    </figure>
+  </div>
+  <div class="artist m-md-4 m-2">
+    <figure>
+      <img class="firstimg" src="https://i.pinimg.com/236x/99/ab/3d/99ab3dc311f8a2cf5c75287ab0af93ba.jpg">
+      <figcaption class="text-light text-center">Raghu Dixit</figcaption>
+    </figure>
+  </div>
+  <div class="artist m-md-4 m-2">
+    <figure>
+      <img class="firstimg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRIYGBgYGhgaGBoYGBgYGBgZGBoaGhgYGBocIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHjYrJCs9NDQ0NDY0MTQ0NjE0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAACBQEGB//EADsQAAICAQIEBAQDBgUEAwAAAAECABEDEiEEBTFBIlFhcQYTMoGRobFCUnLB0fAjYrLh8RVDgpIUotL/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QAKREAAgICAgIABQQDAAAAAAAAAAECEQMhEjEEQRMiMlFhcZGhsYHB8P/aAAwDAQACEQMRAD8A+QNKQhE4yzroaUQcsJWSZOhAgSem4LnSaQnTpdzzKvCYeHLmlml0Pr0e+4fBhyLvW/lMrn3LseNdlAN9pm8LwPEYyCrbCjW9GD47imY6W2rtffzi4blLsaKsVwPNDC8y1jeBp0SiPRsYmjKiZ3DvHkaTaEosywLpGROFIEYznSWSN5McLy7lb5X0rsBuzEEhR6151t/yZTkvYwqiE7AWT0A3Jl8/Cug8Y0/xbEDzIM9CvEpwWrQyvlI0/MvVo6WFoEAm66k+wnluO5izOWyMGI67Xuf1b1PS+01v/AePs4+E0TVgdT2lMK7wHL87DItt4SRq7qV6kMDsfv3npOZ4+GCjQQMltdBghF+GtR8rquu3SCMrdGaMpk3lXG4MYcQedNo1ioawmxMvmGHS9+c0uFNycyw6kvyirTCgPCvqT1E7kTUteUT4LJTe80H2O0ElTCZGLIUf07xnOncdDJx/D/tCU4PJY0GF72YmLLXtCZU7iByJRqFxP2MRqjCmZL6zNzY6m1mSoplx6hMmYz0eXdQ0FkSjOK0zMBdKgzG3IMVYRX0RlGiklzs5Ug1QBqpypzG8MVnSWTTAMsGRGisEyTUJKP2BTR5NkrINrvaIFYfhM2h1byMPG00ItM+hvwr/ACi2m9r27TwXHks5bpPYp8TJ8lVvfppHUkzzvG8pcIch87YDtZ7TmwPjJqS2VaTMdDGMWSoErIpnoICbjo1sOWaODIJgYXmhheJKI5toYUrEMGSOI8m0AJhwl2CirPnsB5knsJq8w5ovDL8jEbVq15CCpZxsaqqUeW/SKcuBttyF8GrTVka1FUTRvpv5/jn88fxMRYAICm6IXeq+whhKNu/QY0mJ58zMNj4QSbPXyLG/yMzuI0bhU9j1vYXfnC5HO4UeE9rJv3vrGOA5e2Qkk7LRO3nBOXsZJydIygxC6b2vpGcWY6PESdNab7G+n9+c9pwPJsYUj5ZJ2skTB+IuXhAGUUpJBA7GSUldFJYJRjbLDdQZYixB8N9C35CFQy5CgPDmjNELqUiZ7GmjuFoGYxc2HSxEfxHUnqJ3mWPo0BwjUfQw9owcCxUx86FWsTZdaMW47DYsQRdMKAsQ62OsXVqlOFy6Go9DGOJTuJmqdGLq+oVAZFqVR6h2GoXFejCHEY7EzHFTYeK8RhveYzVmeHnW3lHWpUNAyV+mcInIW4OojjYtHQY1iec4jh9O6m1PQ/yPkYBGqUcXF0wxdOmOaZwrO4nuEqYsLMkEUjxWCfHHixZRTF8TFSCOoNj7T0PHc/V8ehQQSKI8vOefZIOoXjTabXRO3EbAsThEnDvDOlSiLKpIBGsGSLETqmMY2MLx7E8xsGSO4cknKJj1HInDM2M/91dC70A4IZCfutfeea5hifGzYz2Y+dX0PXrXSOYctG7nqPivlLP8vIuPxZWD6a8dP+zpHQDTfux6zjn8mRP0/wCwrao8LjwsT0nqORZcaeF2+oeLvv29opx/AsiHUrqbA+gi/MWfKh085l4w6/Sn26k+8L+ZFYPg9HrW5qceoouoGhuRsK36wRyJxCFDj0XsLNkkg7+EbEGVTlL5uGBFDQ9MSezfvCugPe9q6d5rci+H/lrrylQVU0A5YnyO20nWrOhSlJ/g8kvCtjVA9WyBtu3UEH1BBlVWaXP/AAuqb2ikGze7scnTt9YFeky0O86ou1ZxzSjJpFcixrhukXzLO8M9bQ+hRrisdrMlG39puKbExuLTS/vNF7ow/WpbglWxRnOBy9ofIlGB6BR5/j8NGd4XNqFHrNPjcGoXMV0KG4ydqghXFGTHmr2hXAZbiTRXsw5lAO4ijNCYcvYzmZO8BhDiEvpEiJotFcyQNWJOPsBclzhkuTbokNYs5UkVanqp6Ef1hf8A4oYFkPTqp6j+sT02auER2Q2NjOjHNJcZq1/KCmvZ3GxEdxtcDkpwSqkEC2rp7weB6mnFJ6dr0ykXWh3TJplkNy1REOLPjizpNIrBPjlVIzVmepozQxtYqKOk7gajRjoSNxdBmSUIjDixBkRkyvZVWqOYskSIhMbQtWZo1seSetx8zxEorqf8XIzKxoqqZDTId7tciqfxPeeKwNPoPKvhpH4HXlOl3cvi8wpUCyO4NBh7A9zOLy+MY3IfG39K90FfGqurOSUcMh1tqCMCdgb2HTcdQfOKcY/DIpKhRZ0+E2a6E+YHrtMPmPMHRijsSNq32tdr++5/HyiHG5SVWuhO/wBpCCfFIq3wtVs9dyrn2HDrX5mpNNnaiSDfTrvuKgsHMUbKmh9KPVJsXQg9NxsD5XMXlPw+XUZcjaUOy7gE+pZtlH4n0jfHckGNgy5ldEIPgIIBBDaWYbE7GjKSx0rYI5m6VHOdur5cpH1IysTfVW8Jv2bR/wC5mSTvHOEf5mZ7G2UnGPckaPsHCE+gMUdZWH0pEZu5WFqDTYwiHaBydY1iGhheL8zx2LE7ieGcalisxjYclEGa+vUtiYzpTER3gX7RnvZhhG7GJcXgEdyLUjIGWLdGWjF4dqOk/aC4rFvYh+LwEGUV9Qhf3DYg0NjyXsYPMtGAZqMwAmdairGNs9iJvFMwDCUqGaDqI42Ra2EyiDuGzDpAxjSVNhcOYqbBoiOnGMgJUU3Ur/Nf6TOl8bkGwaIlseSlxltf9tATrT6HMOSOobi6kZNxQfuOzeo8jJgfsZp462tp+y4zUhWWXeSoiMLZccUdZpssXyY5SMjdneFcGgesexcu1HaYxtTtPR8p4oFQb3EZyNdAOO5aqrqW7HX1mTU1+b8YegFAxDFiLEBRZOwE0G62NG2bHw3yPNxLVjACggF3JCA0WqwCSaBNAdu0+kczd8SYOGLK7JiQWtgBUAW2PayD7zyXKONTh8aqpDsSxanKISdrHdqAAuq2leZ8wRwDrVHdQdSu5Nq7KLJUbbdb28iKnB5EZ5pNNaXR6eHx/hyjOQL4hwK4O4Lr4lG+4BGsD0o3e30+s8zi4gjbqBNPis+X6XLGhanr/wCSsOome2PU1gAE2fIG+o97uUxrhGmS8zE+XOPs9ry/gMmVUA2C41bY6wqgKCRvQ8yf12EZ4rHw2hsPzWS9PjuwSDdgGu/l2M2OU8JixcGEbIyqdAfRXzM+RwHKBjsEUOAAPMwXEclRdLf/AAmbewHZXYEjqQSK6eUV5buuiWJJ3a/cweTcaeDco2nJiZvGpW1dT9LqD0Yenl7RTmfAsXdkBZdR8SgkeK2F1023/wCI18TkkI5xfL0kpVVt9S+n7058P8c2Ntt9WixtZ6gab7+MitxTHYxMSblaffr0eh5PjYpeN8SKppIxFWuspmE9l8T8syZCc4cZCqD5igaWTuT/AJksnxDpsCBU8dmE6kzw07JgaOY5nYG3j2N4GEQ5jjo3A4clEGaXGY9QmUqkfaNHaNVmw3iW4FMlbQXDZtqg8uxi0Y7xyXMg+EzXLahM7iccyZimVNQmdk2juJ+xgeKx95jCmqp1t5RpwNMzNg2lYRxBxSM1TLM1ytSAywmB2VknSJyFAL42ozTx5Bk6kBh+12b39fWZIhcbVLY58dPafaHhKnT6NYKymmFfmD7GFEWw8aKphfp/MeRl8WSHLGKpxen+6LtR7iwxEqwhJUiSQormx3KcDkKt7xp1gHTvKdmNfieG1pNv4Y5AqKufOpcsf8PEv7e27P8A5aI26bi76TO5CmsamFopA3/aPXT60Nz9vOey5dxaM+tmYAAhdIHiJBFNflZP/kZeEHxthVpWYvOODxZKfE6I9EaMKFKN/QBtqYC7FDr1ajPLcXy3Mn1KSFJ6g+E/tD9OvlPbcx4VFJyopdGJ+fjINgd3Vf8AKbO3SK8TyvMu+PKuVGXUnzNWqj+zrUgk79zNLHEb4k0krPJY+KK+HfsSrbqQe/8AuN51siEWtqf3fqW/NT1Hsb949xijJjRsqIjjZQgIOlWZSrkkm7Vu57dOkysvDsCunxByAvnZ6Cck4JM6oeTy+WR9H+IMmvFw7KfCuNW6gUWVQtDzv9IlyfneksM7sxc+EhtwfO+pMHzN2VExFbXGiKx7FlBv7WZjcIFbKt9Bv7Tn48Y0ZNxej13xCUfAw+YboOFNHdfTrR33nkrIK02kjdWqxq3oBtJo/h1mhz4OtZVR9ORTiUvQH+GzUFHWipU+IXv5QOVVoULRkR+l2TjRmPn9Wr8DHwQadstn8qvGcV7f8I9JyPisjYTlc6ijldV3aaUFAnqNTXv+9ML4j5cMbhk+hxqT0vqvp5getdp6D4ZF8M6llH+Idy6Kd8aCxqIsA1+Ez+YhnxZEYgsgLDZrOglgQCNjTONj3HpOlqzyIumePbYxnE8VyPD8M4rfrBGNuiqVs2+GVStHrMbikCk7d41hzkGL8ee86PiwpRqi6mqoVuml8psRU5LhleJ5HFu4iZOLdxKo9Gd4gAiAyneWR7E5WSM7iBRsQgfUJbiEiiZKMLMDzpRgNMfypYiGVjMCVVbK6pWpW53VEZPlfZSEUwcspgTFWmXlSJAZaOhuyk6DIROQoQIrRjE9RQGEVpRMpGRr4skNMvFkj+PJcVooXYSoxkkACydgPU9BLGMcuF5ce1/4if6hGhuSQV2bGCsJRGUgAbEnZmYWT9JF79PWaauoFWexDDtW/T7ynH80wurJlFMpYgmqstdr5dp53BzDUxAa9J29R5y+aUk016BJOz2L8WwC5lIqwMg8+1gfqPWV5Bxy3lwPVI5bH2ARjYr0o9PIzO4TMStjoRRH9ZkcfmOJ1cdANJ/hPQH2/nMsmgDvO+FZXNm1clkNXpdd3Q+YIG19aHrNL4b5MwxvxDkKHB+UpGwZhs9Heuw/G4fkiDjHTGVXQKLk6hqYUVUEnrt2HQes9xz/AJMQgK7gLpIAFUB2Hp/KJOUIyV+xefFngudcXqQ/Lda/aB+q+n23mDj4QICXOpiPCu4F/wCY+l3XtC/EgbG+sD6wD7sDpP8AI/eA4bhXRNebo7AupsNR6MPJhZrp9xOWWOTbO+OaPKMpK19hz/qx+Q/DOrMQwyIxb6SPIUSRpobn9mLcHlKlku9yO5Pcr7CiojfFcmJ+W+LKmTfSxUMNCv8ATqNdKPUbAgiYnE2mZQdjdHfuPCffpGhpofyIxlCXF2rtfoz2Hw8+di2HAFOrdtepVA+ksaIurXz6Ca/McK4yx0AU48WrVqUAkk70u2g1/mmHyPOq5GpHa8WTYX6X0IsVq/Hpc0+b5HOE/MNE5EWuyproDp1O5PvQqVf1HmVo8DxaaHZb+hmX/wBSR/KW4Zx94fmvDseIzUP+4/8AqMrm4ApYIIZaJH4GjOvH4eWScqrV79/odcMMpboIrG5bOpIgceSNawROCSE4oxW2MsmSE5hQIiervNehGqHMm4uLh6MKj2IvlEAC+Z9pnZjGC+0Ty9ZjBMWbsYPiEgg0LqsRWLfJUKmcl3EpFZFqiTonW6ysAWjty6mDnQYyYE6CSpE6DOxhnspOgyETkKYoVHjWHJUSBhFaU7KQl6Zr4Wuh5z3XKuExoiUATakn1BBnzfFmqaWP4jdFobycrTTRaMlHs1/iHEuo79Z5zhnCOIHLzR2Ysxu4rly2bhc72K5r0e84bjAo26GDHAHiHKL0O7HrpXqTPHcPxb9FJPpuZ6jlfFOooeFjs3c79RNh099Ai72e75I+Pg2VERXIoEnqp6nSALP3I6T02Xn2pW3cmm8K40CggA7ksT0Yfn5T5JxmTMw1fNcj9oa2Ar0AMzcvFsNldr9GN/rKZYxnK/YHG3Z7Xi8aZmS2p8eQPoK6WIZegHffSYHjsAzNWTIqICpZdixVKJAQb+lmh6zyvL+Y8Q+RU1s2rw+K2YdtQb6lI94xzDIuDI2LGPCAuturvRprY9rHSaUuKHhFyfFGjx/O2Zj8jCiIAVDEAuV6eyiidgPvFOe8Irpr0aciIrkDYOnRyw/fBs2OoB7iCz49q1dx28vYiNHMowq2SyEDozBSSEyIUHtvX4yanGX6nZk8XNii+SpfwNfDucfOxXuGDg9dw2N9v0E9FztCUdbsfMxG6N75Aa+1zxPw9no4W7h0HQd2Cm/sTPoHEoSurTsxQ7bix1B+wH4yv5POSPI/EGbTmYadJXS1+etQ2r8x+EQ4viL1ObOrc2bsmbfxkviR1XVaFGP8BtfyevtPJa7QqQ1ie34/kp46emlR6WLyPlqukcZh7TuPOe0U4lzYMvwOWm3ni5I1No5ZPZ3id4mHmrmxKSTfXpMfNs0WWGUUpPpiuLSsKmSWytYipaEVrEixQbtA5DLOd4MmYzBGRWnXEpA2QemEbeClg07UQL2VJucE4J0RU7ASSSSGzHQZYGUnQY6YE6LTk7c5GMyAywMrIIyZgwaCYSAy4hklJDXYIKRvUiiaPAqC2k9CGr+ICx+kQ6H7yThxSdmaPR/DvAeNWYDe6vtS2P79JrJy9kxE14w1tfe9V/oJTgeIC/LrpYX0OpWFzWz5P8RlP0uqEegtgfzM66UY0X0tCHDZQRXaK/8AT6N6bv6drr++0ohKOUIoX4e/X+U3uEddO/mPez0/vyHrJ9gMXieLHDClAOVqJ8kX/wDR/wB/KKcalhTd71fmrbg/l+cJ8ScKb1kgk1qr0A36D95Pz6xHgMxZNB6rVfwk2Pwb/VFa00PiaWSLfVmvn7ewheE4k6Xwk0mYFTfZqOk/jX4CK5G2BinHOQtg7qQR6EGxORVez6rzalikvwc4LUikGtSMdS34gVO+12K0z6i5BxAL1Vx7/VvX2qfN+NUZUHEIN2XRkGx0uFoNv51V+g857nIWbHSCy2hwLAOlgCTf8QnbF3Gz5GSpivxSt8MXNDQ6m18mJQ326uPwE8iuZbYBx0HlPWZcDNjy4jQdsdBCKo7ab9ARfTa58/zZqdgyURakeRGx+868OTitlMbQTjVWjTA97ivAMNe8jW2wWGw8sewdpPJOLlZRwlJ3FDTZlPS6uZvMDZsR7KCt2AB2mfxLAjaDI7jpiNNKhUPCK8Xvy/KSzOWyKkGyCBYwgYypqAMtrRQwZhGEGYjJsrctcsMRJoAm+kHE2hTksDKyREzFjJIZyO2Y7JOSAzKRiwM7KyCOpALSTlzkazFp0GVudEZMwbE9Mp8iD+cFmFMR5E/rGOCx6nA9d/Yb/wAoTmGIDJ79f5x54pSx8l1aQyTas1uEcnF6owPt/dzY5o+hkfoGSgB3a9/t3mHwLjQwJoEr77CjXn2mjmyNlKpX07Ab+EX5+Z/vtQbdF6ImF8xq6NXfah/IdP8Ak2ynE+PQD4k6+57/AKScTxS4MelaLkH7kDbb90fnM0nTnY3udF+vhW4jlQD0HHIXxV1rsbawAtgX02v9J5LDWLIVbo22r/KbAbp06H3UT3PDAFL63/tPMfEHBH6hvS9PTVvfsWH5xlJS2jUWa6APUbH3HWLcZ9De0viz6lVid60t/EtD8a0k+pMpnPhPtOV6lR9L8VZcF/df6MzluQ3pvY9rIF/Y/wB1PoOPjGXgUdAS4CLY6+M42I3/AIp8xwPTD3nveGyXwWxAIdNzqoVk0i69APxE6YPR8xdm5wPEs6q2fIqqAb33YkE7XVjpv0s7dp534k4dF4g0L1KjE+ZqifW6/G4/yvACxN63UA29qg3q1Xy6bmA+K8DBcbtp1jwHQSRp8TKTfQ3q/sR90X8WSjPZkoQOksMsx8nEUe5lsPE3At6PRWaF8bH+JplMxcvcR5uIA6bxPIwsmOtJo5c/F9MSx5WW62sUfaUBliRRJHXpBgyDlR5jCobIszuUCzR27QWqH4ZNR6gAb7+kMfmdIKd6D41G3gJ0+J/bsPaEVSRQQD5h2PkBO4l1FQ2UL8w+M/ugb7yucoWbSWbesft3M6E0tFdImTOwBYMBXgAHl3Imbph+LYWAFqhRvqT3JgWceU5MsuTpk5PYOSSSc4p0zkkkcxJJJJjHbnZJIUYkkkkdAJLCSSPExo8mHjJ8gfz2l+NxAbnc3JJPTxJPBv7s6opfCCrnRTVE0Be/fvNPhuLtGKLpsUGO5PYmulDaSSck+2LyZiHIxLFmJY6rs9wDHePykZC3nR/+q/0kkkJdm9nquR8VrTb7jr2X1Mb4jCH/AAYEVtW3XzkkkI6lod9HlG4U4w6H9llIvrW6t7ndPwgNVqZJJsv1np+HJ/C/cwg5VjVdT1AP5Gey5K4bhcgJrSrHzrSQ919vLtJJK4ujxl2x3l6oKdcj6ulkk2KGwW9ug6x7iSzoUb6D11abJ7GgPwvpQkklkNHs+f52IJB6gkH3G0Uw2TtJJJSb5IpLc1Y/8kmL8YukAXuf0kklZvRfPBRxuhTIe13UEZJJyz7POJcbTIoUCrN2x9PISSQ45OwoYwcWdTBVALjSPQekjORZ1gfL2Fdyetf1kknUptxv8v8Aqx7dGe2+5PWDkknDLsmf/9k=">
+      <figcaption class="text-light text-center">Vasuki Vaibhav</figcaption>
+    </figure>
+  </div>
+</div>
+<!--Top artists-->
+
+<h3 class="playlisttitle text-light ms-4"  id="playlistid">Playlists</h3>
+<div class="playlists m-4">
+  <div class="playlist mx-3 ">
+    <p class="text-center"> 90's Hits</p>
+  </div>
+  <div class="playlist mx-3 text-center">
+    <p>Best of Dance</p>
+  </div>
+  <div class="playlist mx-3 text-center">
+    <p>Love Beats</p>
+  </div>
+  <div class="playlist mx-3 text-center">
+    <p>Party Mix</p>
+  </div>
+  <div class="playlist mx-3 text-center">
+    <p>Most Streamed</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

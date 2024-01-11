@@ -1,0 +1,120 @@
+body{
+    overflow-x: hidden;
+}
+#brandid, .offcanvas-title{
+    color: rgb(7, 168, 7);
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+#brandid:hover, .offcanvas-title:hover{
+    letter-spacing: 8px;
+    transition: ease 0.5s;
+}
+.banner_and_form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: bannerandform;
+    animation-duration: 2s;
+}
+.banner{
+    width: clamp(800px,700px,250px);
+    letter-spacing: 6px;
+}
+.login_and_signup{
+    position: relative;
+}
+.login_and_signup>li{
+    display: inline-block;
+    list-style-type: none;
+}
+.login_and_signup>li>a{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.forms{
+    position: relative;
+}
+.login-form{
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 20px;
+}
+.login-form input{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+@keyframes bannerandform {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.tnow{
+    margin-top: 40px; letter-spacing: 3px;
+    font-family: 'Teko', sans-serif;
+}
+.trendingsongs{
+    display: flex;
+    overflow-x: scroll;
+
+}
+.trendingsongs:hover{
+    cursor: pointer;
+}
+.trendingsongs::-webkit-scrollbar{
+    width: 0;
+}
+.trendingsongs .songs{
+    min-width:150px;
+    border-radius: 10px;
+    border: 20px;
+
+}
+.tartists,.playlisttitle{
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 3px;
+
+}
+.artist>figure>img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.topartistss{
+    display: flex;
+    overflow-x: scroll;
+}
+.topartistss::-webkit-scrollbar{
+    width: 0;
+}
+.playlists{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+.playlists::-webkit-scrollbar{
+    width: 0;
+}
+.playlist{
+    min-width: 200px;
+    height: 150px;
+    background-color: rgb(169, 226, 169);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgb(19, 59, 19) 2px 2px 20px inset;
+}
+.playlist>p{
+    position: absolute;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    bottom: 10px;
+    right: 15px;
+}

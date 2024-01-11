@@ -1,0 +1,34 @@
+@media (min-width:1300px) {
+    .navbar-nav{
+        margin-left: 700px;
+    }
+}
+@media (min-width:995px) {
+    .navbar-nav>li>a:hover{
+        transform: translateY(-5px) scale(1.2);
+        transition: transform 0.5s;
+    }
+}
+@media (min-width:630px){
+    .banner>h1{
+        line-height: 70px;
+    }
+}
+@media (min-width:1070px){
+    .login-form {
+        position: absolute;
+        top: -100px;
+        left: 70px;
+    }
+
+}
+@media (max-width:340px){
+    .login-form{
+        padding: 15px 20px;
+    }
+}
+@media (min-width:1070px) {
+    .tnow{
+        margin-top:235px;
+    }
+}
